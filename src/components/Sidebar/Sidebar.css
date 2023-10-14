@@ -1,0 +1,66 @@
+@import "../../vars.css";
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 260px;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+
+.title-container{
+    width: 227px;
+    height: 42px;
+    padding: 10px 40px 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.title-container:hover{
+    background: var(--secondary-color);
+}
+
+.title-container:hover a{
+    color: white;
+}
+
+.sidebar-container::-webkit-scrollbar {
+    width: 12px;
+}
+.sidebar-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.sidebar-container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--secondary-color); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+.title{
+    font-family: var(--font-mulish);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(115, 125, 148, 1);  
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .sidebar-container{
+       display: none;
+    }
+}

@@ -1,0 +1,123 @@
+@import '../../vars.css';
+
+.main-container{
+    width: 1020px; 
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-select-button{
+    display:none;
+}
+
+.category-heading{
+    font-family: var(--font-mulish);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(16, 14, 58, 1);
+    padding: 15px;
+}
+
+.arrow{
+    padding: 0 5px;
+}
+
+.category-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.items-container{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item{
+    width: 140px;
+    height: 222px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+.item-image{
+    width: 118.18px;
+    height: 100px; 
+}
+
+.add-icon{
+    width: 42px;
+    height: 42px;
+    z-index: 1;
+    text-align: right;
+    margin-left: 75px;
+    margin-top: -70px;
+    cursor: pointer;
+}
+
+.item-price{
+    font-family: var(--font-mulish);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(16, 14, 58, 1);
+}
+
+.item-name{
+    font-family: var(--font-mulish);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color:rgba(16, 14, 58, 1);
+}
+
+.item-weight{
+    font-family: var(--font-mulish);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color:rgba(182, 186, 195, 1);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .main-container{
+        height: 100%;
+         width: 100vw;
+         overflow: hidden;
+    }
+
+.mobile-select-button{
+    display: block;
+    text-align: right;
+    float: right;
+    font-size: 15px;
+    padding: 10px;
+    background: transparent;
+    color: var(--secondary-color);
+    border: 0;
+    outline:0;
+}
+
+.close-button{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: -15px;
+}
+    
+.wrap{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}}

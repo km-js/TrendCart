@@ -1,0 +1,57 @@
+@import '../../vars.css';
+
+.mobile-main-container{
+    display: none;
+    width: 100%;
+}
+.mobile-sidebar-container{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.mobile-icon{
+width: 24px;
+height: 24px;
+}
+
+.mobile-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.mobile-icons-container{
+    width: 42px;
+    height: 42px;
+    background: rgb(205, 202, 202,0.5);
+    color: rgba(128, 128, 128, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.mobile-icons-container:hover{
+    background: var(--secondary-color);
+    color: white;
+}
+
+.mobile-icons-container:hover p{
+    color: var(--secondary-color);
+  }
+
+.mobile-name{
+    text-align: left;
+    color: rgba(128, 128, 128, 0.8);   
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .mobile-main-container{
+       display: block;
+       overflow: auto;
+       width: 100vw;
+    }
+}
